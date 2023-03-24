@@ -1,0 +1,23 @@
+:root{
+    --green-color: #33D1CC;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    background-color: #19283F;
+}
+.navbar ul li a{
+    color: white;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active,
+.navbar ul li a:focus{
+    color: var(--green-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search svg{
+    color: var(--green-color);
+}
