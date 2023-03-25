@@ -1,5 +1,7 @@
 :root{
     --green-color: #33D1CC;
+    --dark-color: #19283F;
+    --orange-color:#FFA83E;
 }
 *{
     font-family: 'Roboto', sans-serif;
@@ -10,6 +12,7 @@
 .navbar ul li a{
     color: white;
 }
+
 .navbar ul li a:hover,
 .navbar ul li a.active,
 .navbar ul li a:focus{
@@ -20,4 +23,58 @@
 }
 .navbar .search svg{
     color: var(--green-color);
+}
+.navbar [type="button"]{
+    border-radius: 50px;
+    color: var(--orange-color);
+    font-weight: 600;
+}
+.navbar .menu{
+    color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.25rem;
+}
+
+.navbar .menu[aria-expanded ="true"]{
+    border-color: var(--green-color);
+}
+.navbar .menu svg{
+    color: white;
+    font-size: 1.8rem;
+}
+/*          content Start       */
+.main-content{
+    width: 100%;
+    height: calc(100vh - 72px);
+    background-color: var(--dark-color);
+}
+.main-content h1{
+    color: white;
+}
+.main-content p{
+    color: #8C949F;
+    font-weight: 600;
+}
+.main-content [type="button"]{
+    width: fit-content;
+    height: 40px;
+    color: var(--orange-color);
+    font-weight: 500;
+    border-radius: 50px;
+}
+/*          content End       */
+
+/*          sec-2 Start       */
+.sec-2 .para{
+    position: relative;
+}
+.sec-2 .para::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
 }
