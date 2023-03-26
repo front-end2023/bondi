@@ -1,7 +1,8 @@
 :root{
     --green-color: #33D1CC;
     --dark-color: #19283F;
-    --orange-color:#FFA83E;
+    --orange-color:#ffc400;
+    --lightgray-color:#eff7fa;
 }
 *{
     font-family: 'Roboto', sans-serif;
@@ -65,10 +66,8 @@
 /*          content End       */
 
 /*          sec-2 Start       */
-.sec-2 .para{
-    position: relative;
-}
-.sec-2 .para::after{
+
+.sec-2 div::after{
     content: "";
     width: 120px;
     height: 2px;
@@ -77,4 +76,27 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%,0);
+}
+/*          sec-2 End       */
+
+/*          sec-3 Start       */
+.sec-3 .icon_holder{
+    height: 200px;
+}
+.sec-3 .number{
+    color: var(--lightgray-color);
+    font-size: 12rem;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.sec-3 .icon{
+    color: var(--green-color);
+    font-size: 4.5rem;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.sec-3 h4{
+    color: var(--orange-color);
 }
