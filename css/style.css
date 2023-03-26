@@ -67,7 +67,8 @@
 
 /*          sec-2 Start       */
 
-.sec-2 div::after{
+.sec-2 div::after,
+.sec-5 .line::after{
     content: "";
     width: 120px;
     height: 2px;
@@ -76,6 +77,15 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%,0);
+}
+.sec-2 .links :first-child{
+    color: var(--orange-color);
+    border-radius: 20px;
+    height: 40px;
+    line-height: 10px;
+}
+.sec-2 .links a:hover{
+    color: #FF3150!important;
 }
 /*          sec-2 End       */
 
@@ -99,4 +109,59 @@
 }
 .sec-3 h4{
     color: var(--orange-color);
+}
+/*          sec-3 End       */
+
+/*          sec-4 Start       */
+.sec-2.sec-4{
+    background-color: #EFF7FA;
+}
+.sec-2.sec-4 .box::after{
+    content: "Application";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(95, 216, 212,0.6);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    position: absolute;
+    left: -100%;
+    transition: 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-2.sec-4 .box:hover::after{
+    left: 50%;
+}
+.sec-2.sec-4 [type="button"]{
+    color: var(--orange-color);
+}
+/*          sec-4 End       */
+/*          sec-5 Start       */
+
+.sec-5 .left button{
+    color: var(--orange-color);
+}
+/*          sec-5 End       */
+
+/*          sec-6 Start       */
+.sec-6{
+    background-color: #eff7fa;
+}
+/*          sec-6 End       */
+
+/*          Footer Start       */
+footer{
+    background-color: var(--dark-color);
+}
+footer p,
+footer li a{
+    color: #85949F;
+    text-decoration: none;
+}
+footer ul{
+    list-style-type: none;
 }
